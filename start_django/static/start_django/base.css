@@ -1,0 +1,265 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #89bfd4;
+}
+
+#header{
+    background-color: rgb(200, 144, 40);
+    color:rgb(255, 255, 255);
+    padding: 10px, 20px;
+    text-align: center;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 24px;
+}
+#subheader{
+    color: rgb(10, 111, 243);
+    padding: 10px, 20px;
+    text-align: right;
+}
+
+
+#content{
+    display: flex;
+    margin: 20px;
+}
+
+#sidebar{
+    width: 25%;
+    background-color: rgb(92, 68, 68);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 28px;
+    line-height: 1.5;
+    color: rgb(89, 13, 144);
+}
+
+h2{
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(180, 84, 67);
+}
+
+h3{
+    font-size: 16px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+P{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+#sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sidebar li{
+    margin: 10px 0;
+}
+#sidebar li.selected{
+    font-weight: bold;
+}
+
+
+/*Основной контент!*/
+#main{
+    width: 75%;
+    padding-left: 20;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.item{
+    background-color: rgb(141, 195, 212);
+    border: 5px solid rgb(132, 210, 81);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333%-20px);   
+}
+
+.item ing{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-detail{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item ing{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price{
+    font-size: 24px;
+    color: rgb(42, 116, 165);
+    margin-top: 10px;
+}
+
+.button{
+    background-color: rgb(169, 231, 193);
+    color: aliceblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(119, 179, 142);
+}
+
+/*Ссылка назад к списку продуквтов*/
+a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+.cart{
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart th, .cart td{
+    border: 5px solid rgb(80, 28, 19);
+    padding: 10px;
+    text-align: left;
+}
+
+.cart th{
+    background-color: rgb(250, 239, 139);
+    color: rgb(207, 48, 0);
+}
+
+.num{
+    text-align: right;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.order-info{
+    background-color: aqua;
+    border: 5px solid rgb(243, 251, 0);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-info h3{
+    margin-top: 0px;
+}
+
+.order-info ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.order-info li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px, 0px;
+    border-bottom: 4px solid fuchsia;
+}
+
+.order-info li:last-child{
+    border-bottom: none;
+}
+
+.order-info spar{
+    font-weight: bold;
+    color:blue;
+}
+
+.order-form{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.order-form p{
+    text-align: center;
+}
+
+.order-form input[type='submit']{
+    background-color: chartreuse;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    padding: 10px, 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-form input[type='submit']:hover{
+    background-color: rgb(87, 155, 19);
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    width: 200%;
+    padding: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: right;
+}
+
+.error{
+    color: blue;
+    font-size: 14px;
+}
+
+.small{
+    font-size: 12px;
+    color: seagreen;
+}
+
